@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom styles for this template-->
+<link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
+    <title>Risk Management Accessment</title>
+</head>
+
+<body>
+<div class="container">
+
+
+
+    <form action="" name="submit_risk" method="POST" >
+      <div class="form-group">
+        <label for="RA-Id">RA-Id:</label>
+        <input type="text" id="RA-Id" class="form-control" name="RA-Id"><br><br>
+      </div>
+      <div class="form-group">
+        <label for="Asset">Asset:</label>
+        <input type="text" id="Asset" class="form-control" name="Asset"><br><br>
+      </div>
+
+      <div class="form-group">
+        <label for="Risk-Owner">Risk Owner:</label>
+        <input type="text" id="Risk-Owner" class="form-control" name="Risk-Owner"><br><br>
+      </div>
+
+      <div class="form-group"></div>
+
+
+      <label for="Category">Asset Category:</label>
+      <select name="Category" id="Category" class="form-field">
+        <option value selected>--</option>
+        <option value="1">Access Management</option>
+        <option value="2">Environmental Resilience</option>
+        <option value="3">Monitoring</option>
+        <option value="4">Physical Security</option>
+        <option value="5">Policy and Procedure</option>
+        <option value="6">Sensitive Data Management</option>
+        <option value="7">Technical Vulnerability</option>
+        <option value="8">Third-Party Management</option>
+      </select><br><br>
+      <label for="Nature of risk">Nature of Risk:</label>
+      <input type="text" id="Nature" name="Nature"><br><br>
+
+      <label for="vulnerability">Vulnerability</label>
+      <input type="text" id="vulnerability" name="vulnerability"><br><br>
+
+      <label for="Threat">Threat</label>
+      <input type="text" id="threat" name="threat"><br><br>
+
+      <button type="submit" form="user" value="Submit">Submit</button>
+
+    </form>
+
+
+</div>
+  </body>
+</html>
