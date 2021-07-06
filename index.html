@@ -3,42 +3,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Risk Management Accessment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+                crossorigin="anonymous">
+                <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <title>Risk Accessment Form</title>
 </head>
-<body>
-    <form action="" name="submit_risk" method="POST" >
-        <label for="RA-Id">RA-Id:</label>
-        <input type="text" id="RA-Id" name="RA-Id"><br><br>
+<body class="bg-gradient-success">
+    <div class="container text-center">
+        <h1>Risk Accessment Form</h1>
+        <form action="" name="submit_risk" method="POST" >
+            <label for="RA-Id">RA-Id:</label>
+            <input type="text" id="RA-Id" name="RA-Id"><br><br>
 
-        <label for="Asset">Asset:</label>
-        <input type="text" id="Asset" name="Asset"><br><br>
+            <label for="Asset">Asset:</label>
+            <input type="text" id="Asset" name="Asset"><br><br>
 
-        <label for="Risk-Owner">Risk Owner:</label>
-        <input type="text" id="Risk-Owner" name="Risk-Owner"><br><br>
+            <label for="Risk-Owner">Risk Owner:</label>
+            <input type="text" id="Risk-Owner" name="Risk-Owner"><br><br>
 
-        <label for="Category">Asset Category:</label>
-        <select name="Category" id="Category" class="form-field">
-            <option value selected>--</option>
-            <option value="1">Access Management</option>
-            <option value="2">Environmental Resilience</option>
-            <option value="3">Monitoring</option>
-            <option value="4">Physical Security</option>
-            <option value="5">Policy and Procedure</option>
-            <option value="6">Sensitive Data Management</option>
-            <option value="7">Technical Vulnerability</option>
-            <option value="8">Third-Party Management</option>
-        </select><br><br>
-        <label for="Nature of risk">Nature of Risk:</label>
-        <input type="text" id="Nature" name="Nature"><br><br>
+            <label for="Category">Asset Category:</label>
+            <select name="Category" id="Category" class="form-field">
+                <option value selected>--</option>
+                <option value="1">Access Management</option>
+                <option value="2">Environmental Resilience</option>
+                <option value="3">Monitoring</option>
+                <option value="4">Physical Security</option>
+                <option value="5">Policy and Procedure</option>
+                <option value="6">Sensitive Data Management</option>
+                <option value="7">Technical Vulnerability</option>
+                <option value="8">Third-Party Management</option>
+            </select><br><br>
+            <label for="Nature of risk">Nature of Risk:</label>
+            <input type="text" id="Nature" name="Nature"><br><br>
 
-        <label for="vulnerability">Vulnerability</label>
-        <input type="text" id="vulnerability" name="vulnerability"><br><br>
+            <label for="vulnerability">Vulnerability</label>
+            <input type="text" id="vulnerability" name="vulnerability"><br><br>
 
-        <label for="Threat">Threat</label>
-        <input type="text" id="threat" name="threat"><br><br>
+            <label for="Threat">Threat</label>
+            <input type="text" id="threat" name="threat"><br><br>
 
-        <button type="submit" form="user" value="Submit">Submit</button>
+            <button type="submit" form="user" value="Submit">Submit</button>
 
-    </form>
+        </form>
+    </div>
 </body>
 </html>
