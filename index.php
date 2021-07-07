@@ -72,7 +72,13 @@ include('includes/scripts.php');
             <option value="System">System</option>
           </select>
         </div>
-
+        <div class="form-group">
+          <p>New Risk?</p>
+          <input type="radio" id="new risk" name="new risk" value="Yes">
+          <label for="new risk">Yes</label>
+          <input type="radio" id="not new risk" name="new risk" value="No">
+          <label for="new risk">No</label>
+        </div>
         <div class="form-group">
 
           <label for="vulnerability">Vulnerability</label>
@@ -87,7 +93,7 @@ include('includes/scripts.php');
 
         <div class="form-group">
 
-        <label for="Impact">Impact</label>
+        <label for="Impact">Impact:</label>
         <input type="text" id="impact" class="form-control" name="impact">
         </div>
 
