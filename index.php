@@ -22,6 +22,14 @@ include('includes/scripts.php');
 
 
       <form action="controller.risksub.php" name="submit_risk" method="POST">
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" class="form-control" name="subject">
+        </div>
+
+
+
         <div class="form-group">
           <label for="Asset">Asset:</label>
           <input type="text" id="Asset" class="form-control" name="asset"><br>
@@ -55,6 +63,17 @@ include('includes/scripts.php');
         </div>
 
         <div class="form-group">
+          <label for="Risk Source">Risk Source:</label>
+          <select name="Risk Source" id="Risk Source" class="form-select" class="form-field">
+            <option value selected>---</option>
+            <option value="External">External</option>
+            <option value="People">People</option>
+            <option value="Process">Process</option>
+            <option value="System">System</option>
+          </select>
+        </div>
+
+        <div class="form-group">
 
           <label for="vulnerability">Vulnerability</label>
           <input type="text" id="vulnerability" class="form-control" name="vul"><br>
@@ -66,10 +85,17 @@ include('includes/scripts.php');
           <input type="text" id="threat" class="form-control" name="threat"><br>
         </div>
 
+        <div class="form-group">
+
+        <label for="Impact">Impact</label>
+        <input type="text" id="impact" class="form-control" name="impact">
+        </div>
 
 
 
         <button type="submit" class="btn btn-primary" name="riskbtn">Submit</button>
+
+
 
       </form>
     </div>
@@ -83,3 +109,4 @@ include('includes/scripts.php');
 
 include('includes/footer.php');
  ?>
+
